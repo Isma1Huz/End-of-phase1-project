@@ -9,7 +9,7 @@ ________________________________________________________________________________
 - The first day was the design day which involve creating a low fidelity mockup like sketches  or a high fidelity mockup like Figma design for the
   project.
 - Here is my design link. CHeck it out below.
-   https://www.figma.com/proto/GobFHDbBIkOmhtZHknkoMm/Ismael-Hussein-Stasho?type=design&node-id=55-7251&t=QBVep81UOxpevg3c-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=55%3A7251&mode=design
+- https://www.figma.com/proto/GobFHDbBIkOmhtZHknkoMm/Ismael-Hussein-Stasho?type=design&node-id=55-7251&t=QBVep81UOxpevg3c-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=55%3A7251&mode=design
 ________________________________________________________________________________________________________________________________________________
 
 ### Requirements
@@ -56,16 +56,28 @@ ________________________________________________________________________________
 - Add your TM as a contributor to the project. (This is only for grading purposes. We promise we won't steal your code)
 - Please make sure you regularly commit to the repository.
   
-___________________________________________________________________________________________________________________________________________________
-
-
 _____________________________________________________________________________________________________________________________________________________
-_____________________________________________________________________________________________________________________________________________
 
-
+## IMPLEMENTATION OF THE PROJECT
+- Project Name/ Idea Name
+# Stasho Bookstore
+_____________________________________________________________________________________________________________________________________________________
+#### Project problem statement
+- Parents in the new education curriculum are having trouble finding the books for the new curriculum. They go to the bookshops where they find long ques which wastes time and sometimes they do not find the books they were looking for.
+_____________________________________________________________________________________________________________________________________________________
+#### Solution statement
+- I  would like to develop an e-commerce website which has the all the books and the stationaries. This e-commerce site will be able to save time for the parents from going to the bookshops as it will offer door to door delivery for the order online. The site will also be able to allow different suppliers to sell their products to allow for the buyers to have multiple choices. 
+____________________________________________________________________________________________________________________________________________________
+#### Project MVP/Application Features
+1- The User Interface for the site 
+2- The 'add to cart functionality
+3-  The Mpesa payment system using the Mpesa Express API
+4- The PayPal payment system using the Paypal API
+_______________________________________________________________________________________________________________________________________________________
 ### Host platform 
 - Github
 - Render
+________________________________________________________________________________________________________________________________________________________
 #### Author
 ![isma (3)](https://github.com/Isma1Huz/Portfolio/assets/132744360/226c966f-524a-40a4-ad72-2c099d44a8b8)
 
