@@ -69,10 +69,10 @@ ________________________________________________________________________________
 - I  would like to develop an e-commerce website which has the all the books and the stationaries. This e-commerce site will be able to save time for the parents from going to the bookshops as it will offer door to door delivery for the order online. The site will also be able to allow different suppliers to sell their products to allow for the buyers to have multiple choices. 
 ____________________________________________________________________________________________________________________________________________________
 #### Project MVP/Application Features
-1- The User Interface for the site 
-2- The 'add to cart functionality
-3-  The Mpesa payment system using the Mpesa Express API
-4- The PayPal payment system using the Paypal API
+- The User Interface for the site
+- The 'add to cart functionality
+- The Mpesa payment system using the Mpesa Express API
+- The PayPal payment system using the Paypal API
 _______________________________________________________________________________________________________________________________________________________
 ### Host platform 
 - Github
