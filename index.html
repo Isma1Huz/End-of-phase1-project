@@ -1,19 +1,267 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stasho-Ismael</title>
-    <link rel="stylesheet" href="./styles/animation.css">
-    <link rel="stylesheet" href="./styles/main.css">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+crossorigin="anonymous">
+<link rel="stylesheet" href="./styles/main.css">
+<link rel="stylesheet" href="./styles/animation.css">
 <body>
 
-    <div id="landing-page"></div>
-    <div id="product-description"></div>
-    <!-- <div id="login"></div>
-    <div id="create-account"></div> -->
-    <script src="./js/script.js"></script>
+
+
+  <!-- Slide-show -->
+
+
+ <div class="slideshow-container">
+  <nav>
+    <h3 id="logo">Stasho</h3>
+    <ul>
+      <li>HOME</li>
+      <li>ABOUT</li>
+      <li>SHOP</li>
+      <li>CONTANTS</li>
+    </ul>
+    <div class="icons">
+      <h5>icon1</h5>
+      <h5>icon1</h5>
+      <h5>icon1</h5>  
+    </div>
+  </nav>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-caption  d-md-block">
+          <h1>HARD COVER 200 PAGES NOTE BOOK</h1>
+          <p>Office Books</p>
+          <button class="shop-now" id="shop-1">SHOP NOW</button>
+        </div>
+        <img class="d-block hght" src="./book.png" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-caption  d-md-block">
+          <h1>HARD COVER 200 PAGES NOTE BOOK</h1>
+          <p>Office Books</p>
+          <button class="shop-now" id="shop-2"> <a href="./pages/description.html">SHOP NOW</a></button>
+        </div>
+        <img class="d-block hght" src="./pen.png" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-caption  d-md-block">
+          <h1>HARD COVER 200 PAGES NOTE BOOK</h1>
+          <p>Office Books</p>
+          <button class="shop-now" id="shop-3">SHOP NOW</button>
+        </div>
+        <img class="d-block hght" src="./book.png" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon left" aria-hidden="true"></span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon right" aria-hidden="true"></span>
+    </a>
+  </div>
+ </div>
+      <h2 class="center" id="featured">Featured Products</h2>
+    <div class="item-container"></div>
+
+    <div class="newsletter">
+      <div class="offer">
+        <span class="top-right">OFFER!!!</span>
+        <p id="off">FREE SHIPPING ON ORDERS ABOVE 2,500/= </p>
+        <span class="bottom-left">OFFER!!!</span>
+
+      </div>
+      <div class="signup-form">
+        <form>
+          <h6 style=" font-weight: bold;">SIGN UP FOR OUR NEWSLETTER</h6>
+          <input type="text">
+          <textarea name="" id="" cols="20" rows="4"></textarea>
+          <button class="shop-now" id="sub">Subscribe</button>
+
+        </form>
+
+      </div>
+    </div>
+
+      <h2 class="center" id="brands-text">Brands</h2>
+    <div class="brands">
+      <img src="./book.png" alt="">
+      <img src="./book.png" alt="">
+      <img src="./book.png" alt="">
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-left">
+        <h5>PAYMENT METHODS </h5>
+        <div class="payment-methods">
+          <img src="./book.png" alt="" class="foot-image">
+          <img src="./book.png" alt="" class="foot-image">
+          <img src="./book.png" alt="" class="foot-image">
+        </div>
+      </div>
+   
+      
+      <div class="footer-right">
+        <h5>FOLLOW US</h5>
+        <div class="socials">
+          <img src="./book.png" alt="" class="foot-image">
+          <img src="./book.png" alt="" class="foot-image">
+          <img src="./book.png" alt="" class="foot-image">
+        </div>
+
+      </div>
+      <div class="footer-links">
+        <ul>
+          <h6 style=" font-weight: bold;">About Us</h6>
+          <li>Our Team</li>
+          <li>OUr Community</li>
+          <li>Our Vision</li>
+        </ul>
+        <ul>
+          <h6 style=" font-weight: bold;">Services</h6>
+          <li>Partners</li>
+          <li>Policy</li>
+          <li>Product</li>
+        </ul>
+        <form>
+          <h6 style=" font-weight: bold;">Get in Touch</h6>
+          <input type="text">
+          <textarea name="" id="" cols="20" rows="4"></textarea>
+          <button class="shop-now" id="send">Send</button>
+
+        </form>
+      </div>
+      <div class="copyright">
+        <p>All right reserved </p>
+        <p>@2023</p>
+      </div>
+     
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Mpesa intergration
+  <div class="container">
+    <h1>Shopping Cart</h1>
+    <ul class="items">
+      <li>
+        <input type="checkbox" name="item" value="10">
+        <label for="item">Item 1</label>
+        <span class="price">$100</span>
+      </li>
+      <li>
+        <input type="checkbox" name="item" value="200">
+        <label for="item">Item 2</label>
+        <span class="price">$200</span>
+      </li>
+      <li>
+        <input type="checkbox" name="item" value="300">
+        <label for="item">Item 3</label>
+        <span class="price">$300</span>
+      </li>
+    </ul>
+    <input type="text" id="phoneNumber" placeholder="Enter your phone number">
+    <button id="submitButton">Submit</button>
+  </div> -->
+
+
+
+
+
+
+  <!-- JS links -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" 
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+ crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>

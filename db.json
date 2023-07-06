@@ -1,0 +1,49 @@
+{
+    "items": [
+      {
+        "id": "1",
+        "title": "Wild Rebels",
+        "price": 24,
+        "image": ""
+      },
+      {
+        "id": "2",
+        "title": "Wild Rebels",
+        "price": 24,
+        "image": ""
+      },
+      {
+        "id": "3",
+        "title": "Wild Rebels",
+        "price": 24,
+        "image": ""
+      },
+      {
+        "id": "4",
+        "title": "Wild Rebels",
+        "price": 24,
+        "image": ""
+      },
+      {
+        "id": "5",
+        "title": "Wild Rebels",
+        "price": 24,
+        "image": ""
+      }
+
+    ],
+    "brands": [
+      {
+        "id": 1,
+        "image": ""
+      },
+      {
+        "id": 1,
+        "image": ""
+      },
+      {
+        "id": 1,
+        "image": ""
+      }
+    ]
+  }
