@@ -7,8 +7,10 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
 crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="./styles/main.css">
 <link rel="stylesheet" href="./styles/animation.css">
+
 <body>
 
 
@@ -28,7 +30,14 @@ crossorigin="anonymous">
     <div class="icons">
       <h5>icon1</h5>
       <h5>icon1</h5>
-      <h5>icon1</h5>  
+      <h5>
+        <header>
+          <div class="shopping">
+              <img src="image/shopping.svg">
+              <span class="quantity">0</span>
+          </div>
+      </header>
+      </h5>  
     </div>
   </nav>
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -39,23 +48,23 @@ crossorigin="anonymous">
           <p>Office Books</p>
           <button class="shop-now" id="shop-1">SHOP NOW</button>
         </div>
-        <img class="d-block hght" src="./book.png" alt="First slide">
+        <img class="d-block hght" src="./images/hard-cover-removebg-preview.png" alt="First slide">
       </div>
       <div class="carousel-item">
         <div class="carousel-caption  d-md-block">
-          <h1>HARD COVER 200 PAGES NOTE BOOK</h1>
+          <h1>Scientific Calculator</h1>
           <p>Office Books</p>
-          <button class="shop-now" id="shop-2"> <a href="./pages/description.html">SHOP NOW</a></button>
+          <button class="shop-now" id="shop-2">SHOP NOW</button>
         </div>
-        <img class="d-block hght" src="./pen.png" alt="Second slide">
+        <img class="d-block hght" src="./images/calulator-removebg-preview.png" alt="Second slide">
       </div>
       <div class="carousel-item">
         <div class="carousel-caption  d-md-block">
-          <h1>HARD COVER 200 PAGES NOTE BOOK</h1>
+          <h1>HB PENCIL</h1>
           <p>Office Books</p>
           <button class="shop-now" id="shop-3">SHOP NOW</button>
         </div>
-        <img class="d-block hght" src="./book.png" alt="Third slide">
+        <img class="d-block hght" src="./images/hb-removebg-preview.png" alt="Third slide">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -67,8 +76,77 @@ crossorigin="anonymous">
   </div>
  </div>
       <h2 class="center" id="featured">Featured Products</h2>
-    <div class="item-container"></div>
+      <div class="item-container-2">
+        <div class="container">
+      
+          <div class="list">
+            
+          </div>
+      </div>
+      <div class="card">
+          <h1>Card</h1>
+          <ul class="listCard">
+          </ul>
+          <div class="checkOut">
+              <div class="total">0</div>
+              <div class="closeShopping">Close</div>
+              
+                  <!-- Button trigger modal -->
+                  <button type="button" id="check" data-toggle="modal" data-target="#exampleModal">
+                    Checkout
+                  </button>
+          </div>
+      </div>
+      </div>
 
+         <!-- Modal -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Checkout Cart</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <ul class="items">
+                  <li>
+                    <h3>Delivery Address</h3>
+                    <input type="text" placeholder="City">
+                    <input type="text" placeholder="Street Address">
+                    <input type="text" placeholder="Special Request">
+                    
+                  </li>  
+                  <li><button type="button" class="btn btn-secondary pay" id="save">Save Address</button></li>
+                  <li>
+                    <input type="radio" name="item">
+                    <label for="item">PAYPAL</label>
+                  </li>
+
+                  
+                      <!--  Mpesa intergration -->
+                  <li>
+                    <input type="radio" required name="item">
+                    <label for="item" >MPESA</label>
+                  </li>
+                </ul>
+                <input type="text" id="phoneNumber" placeholder="Enter your Mpesa phone number">
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary pay" data-dismiss="modal">X</button>
+                <button type="button" class="btn btn-secondary pay" id="submitButton">PAY</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+
+
+
+        <!-- Newsletter -->
     <div class="newsletter">
       <div class="offer">
         <span class="top-right">OFFER!!!</span>
@@ -78,9 +156,8 @@ crossorigin="anonymous">
       </div>
       <div class="signup-form">
         <form>
-          <h6 style=" font-weight: bold;">SIGN UP FOR OUR NEWSLETTER</h6>
-          <input type="text">
-          <textarea name="" id="" cols="20" rows="4"></textarea>
+          <h6 style=" font-weight: bold; font-size: 25px; width: 15rem; text-align: center; margin-left: 1rem;">SIGN UP FOR OUR NEWSLETTER</h6>
+          <input type="text" placeholder="Enter Your Email">
           <button class="shop-now" id="sub">Subscribe</button>
 
         </form>
@@ -90,10 +167,12 @@ crossorigin="anonymous">
 
       <h2 class="center" id="brands-text">Brands</h2>
     <div class="brands">
-      <img src="./book.png" alt="">
-      <img src="./book.png" alt="">
-      <img src="./book.png" alt="">
+      <img src="./images/KASUKU.png" alt=" " id="brand-1">
+      <img src="./images/klb.png" alt="">
+      <img src="./images/LONGHORN.png" alt="" id="brand-2">
     </div>
+
+
 
 
 
@@ -104,9 +183,9 @@ crossorigin="anonymous">
       <div class="footer-left">
         <h5>PAYMENT METHODS </h5>
         <div class="payment-methods">
-          <img src="./book.png" alt="" class="foot-image">
-          <img src="./book.png" alt="" class="foot-image">
-          <img src="./book.png" alt="" class="foot-image">
+          <img src="./images/visa.png" alt="" class="foot-image">
+          <img src="./images/mpesa.png" alt="" class="foot-image">
+          <img src="./images/PAYPAL.png" alt="" class="foot-image">
         </div>
       </div>
    
@@ -114,9 +193,9 @@ crossorigin="anonymous">
       <div class="footer-right">
         <h5>FOLLOW US</h5>
         <div class="socials">
-          <img src="./book.png" alt="" class="foot-image">
-          <img src="./book.png" alt="" class="foot-image">
-          <img src="./book.png" alt="" class="foot-image">
+          <img src="./images/facebook.png" alt="" class="foot-image" >
+          <img src="./images/twitter.png" alt="" class="foot-image">
+          <img src="./images/insta.png" alt="" class="foot-image">
         </div>
 
       </div>
@@ -152,107 +231,6 @@ crossorigin="anonymous">
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- Mpesa intergration
-  <div class="container">
-    <h1>Shopping Cart</h1>
-    <ul class="items">
-      <li>
-        <input type="checkbox" name="item" value="10">
-        <label for="item">Item 1</label>
-        <span class="price">$100</span>
-      </li>
-      <li>
-        <input type="checkbox" name="item" value="200">
-        <label for="item">Item 2</label>
-        <span class="price">$200</span>
-      </li>
-      <li>
-        <input type="checkbox" name="item" value="300">
-        <label for="item">Item 3</label>
-        <span class="price">$300</span>
-      </li>
-    </ul>
-    <input type="text" id="phoneNumber" placeholder="Enter your phone number">
-    <button id="submitButton">Submit</button>
-  </div> -->
-
-
-
-
-
-
   <!-- JS links -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
@@ -262,6 +240,6 @@ integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b
  crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="./js/script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>

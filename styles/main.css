@@ -1,4 +1,9 @@
 
+body {
+  overflow-x: hidden;
+  background-color: wheat;
+}
+
 nav, nav ul, nav .icons {
   display: flex;
   justify-content: space-between;
@@ -7,6 +12,10 @@ nav ul li{
   margin-left: 1.5rem;
   list-style: none;
   
+}
+.icons {
+  position: relative;
+  top: -2rem;
 }
 
 #logo {
@@ -35,6 +44,66 @@ nav ul li{
   
   
 }
+
+
+
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  color: white;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  position: relative;
+}
+
+.icon-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+}
+
+.add-to-cart-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* Slideshow container */
 .slideshow-container {
@@ -88,9 +157,10 @@ nav ul li{
 
 
 /* Items  */
-.item-container{
-  display: grid;
-  grid-template-columns: repeat(1fr 1fr);
+.item-container, .item-container-2{
+  display: flex;
+  padding: 1rem;
+  /* grid-template-columns: repeat(1fr 1fr); */
   flex-wrap: wrap;
 }
 .card {
@@ -99,14 +169,25 @@ nav ul li{
   border-radius: 19px;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
   display: block;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  padding: 1rem 0 1rem 2rem;
+  background-color: #D9D9D9;
 
 }
 .card-img-top img {
   object-fit: contain;
   width: 8rem;
   height: 5rem;
-
+  margin: 1rem 0 3rem ;
 }
+
+
+
+
+
+
 
 /* Newsletter */
 .newsletter {
@@ -128,6 +209,7 @@ nav ul li{
   border-radius: 19px;
   background-color: #383434;
 }
+
 #off {
   width: 60%;
   font-size: 38px;
@@ -170,9 +252,19 @@ nav ul li{
 .brands {
   display: flex;
   justify-content: space-evenly;
+  position: relative;
+  left: -5rem;
+  height: 15rem;
+  padding: 1rem 0;
+  margin: 2rem 0;
 }
+#brand-2, #brand-1 {
+  height: 6rem;
 
-
+}
+input {
+  padding-left: 1rem;
+}
 
 
 
@@ -218,6 +310,7 @@ footer {
 }
 h5 {
   text-align: center;
+  margin-left: 7rem;
 }
 
 form {
@@ -252,7 +345,7 @@ ul li {
   margin-left: 2.5rem;
 }
 #sub {
-  margin-left: 5rem;
+  margin-left: 3rem;
   margin-top: 1rem;
 
 }
@@ -309,19 +402,41 @@ ul li {
 
 #adding-item-no {
   display: flex;
-  width: 5rem;
+  width: 7rem;
   justify-content: space-between;
+  margin-bottom: 1rem;
 
+}
+#adding-item-no  p {
+  margin-top: 1.3rem;
+}
+.btn {
+  background-color: #D9D9D9 !important;
+  border: none;
+}
+.dropdown-menu {
+  background-color: #D9D9D9;
+  border: none;
 }
 .product-more {
-  float: right;
-  width: 40%;
-  padding-top: 3rem;
+  width: 100%;
+  padding-top: 4rem;
   display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  padding-left: 4rem;
   
 }
-.
+
+
+.mns {
+  background-color: #0F0F0E;
+  color: #FFF501;
+  border-radius: 8px;
+  width: 2.5rem;
+  height: 2rem;
+  margin: 1rem 0;
+}
 
 
 
@@ -332,11 +447,208 @@ ul li {
 
 
 
+/* Login */
+
+.login-container {
+  width: 100%;
+  height: 60vh;
+  padding: 1rem;
+  /* padding: 4rem 2rem 1rem 17rem; */
+  display: grid;
+  grid-template-rows: repeat(1fr 1fr);
+  align-items: center;
+  justify-content: center;
+}
+.login-container input {
+  height: 50px;
+  width: 461px;
+  border-radius: 12px;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  
+}
+.login-container p {
+  text-align: center;
+  font-size: 21px;
+}
+.welcome {
+  text-align: center;
+}
+#forgot {
+  color: blue;
+  margin-left: 9.5rem;
+}
+.log, .lg{
+  margin-left: 9rem !important;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
+}
 
 
 
 
 
+
+
+/* Add to cart */
+
+
+
+
+.container{
+  width: 100%;
+  margin: auto;
+  transition: 0.5s;
+  height: 100%;
+}
+header{
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  margin-top: 50px;
+}
+header .shopping{
+  position: relative;
+  text-align: right;
+}
+header .shopping img{
+  width: 40px;
+}
+header .shopping span{
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  top: -5px;
+  left: 80%;
+  padding: 3px 10px;
+}
+.list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-top: 50px;
+}
+.list .item{
+  width: 312px;
+  height: 354px;
+  border-radius: 19px;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  display: block;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  padding: 1rem 0 1rem 2rem;
+  background-color: #D9D9D9;
+}
+.list .item img{
+  width: 90%;
+}
+.list .item .title{
+  font-weight: 600;
+}
+.list .item .price{
+  margin: 10px;
+}
+.list .item .shop-it{
+  background-color: #0F0F0E;
+  color: #FFF501;
+  border-radius: 8px;
+  padding: 0.4rem;
+  width: 8rem;
+}
+.card{
+  position: fixed;
+  top:0;
+  left: 100%;
+  width: 450px;
+  background-color: #453E3B;
+  height: 95vh;
+  transition: 0.5s;
+  z-index: 1;
+}
+.active .card{
+  left: calc(100% - 500px);
+}
+.active .container{
+ transform: translateX(-200px);
+}
+.card h1{
+  color: #E8BC0E;
+  font-weight: 100;
+  margin: 0;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.card .checkOut{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+.card .checkOut div, #check{
+  background-color: #E8BC0E;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 19px;
+  position: relative;
+  right: 2rem;
+  margin-right: 1rem;
+}
+.card .checkOut div:nth-child(2){
+  background-color: black;
+  color: #FFF501;
+  border-radius: 19px;
+}
+.listCard li{
+  display: grid;
+  grid-template-columns: 100px repeat(3, 1fr);
+  color: #fff;
+  row-gap: 10px;
+}
+.listCard li div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listCard li img{
+  width: 90%;
+}
+.listCard li button{
+  background-color: #fff5;
+  border: none;
+}
+.listCard .count{
+  margin: 0 10px;
+}
+
+#check {
+  margin: 1rem 1rem 1rem 7rem ;
+  background-color: black;
+  color: #FFF501;
+  border-radius: 19px;
+}
+.title {
+  margin-top: 10rem;
+}
+
+.pay {
+  color: #FFF501 !important;
+  background-color: black !important;
+}
 
 
 

@@ -1,49 +1,45 @@
 {
-    "items": [
-      {
-        "id": "1",
-        "title": "Wild Rebels",
-        "price": 24,
-        "image": ""
-      },
-      {
-        "id": "2",
-        "title": "Wild Rebels",
-        "price": 24,
-        "image": ""
-      },
-      {
-        "id": "3",
-        "title": "Wild Rebels",
-        "price": 24,
-        "image": ""
-      },
-      {
-        "id": "4",
-        "title": "Wild Rebels",
-        "price": 24,
-        "image": ""
-      },
-      {
-        "id": "5",
-        "title": "Wild Rebels",
-        "price": 24,
-        "image": ""
-      }
-
-    ],
-    "brands": [
-      {
-        "id": 1,
-        "image": ""
-      },
-      {
-        "id": 1,
-        "image": ""
-      },
-      {
-        "id": 1,
-        "image": ""
-      }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "PRODUCT NAME 1",
+      "image": "a3-removebg-preview.png",
+      "price": 1950
+    },
+    {
+      "id": 2,
+      "name": "PRODUCT NAME 2",
+      "image": "a3-removebg-preview.png",
+      "price": 45
+    },
+    {
+      "id": 3,
+      "name": "PRODUCT NAME 4",
+      "image": "a3-removebg-preview.png",
+      "price": 275
+    },
+    {
+      "id": 4,
+      "name": "PRODUCT NAME 5",
+      "image": "a3-removebg-preview.png",
+      "price": 105
+    },
+    {
+      "id": 5,
+      "name": "PRODUCT NAME 6",
+      "image": "a3-removebg-preview.png",
+      "price": 150
+    },
+    {
+      "id": 6,
+      "name": "PRODUCT NAME 1",
+      "image": "a3-removebg-preview.png",
+      "price": 200
+    }
+  ],
+  "address": {
+    "city": "Isma",
+    "streetAddress": "HUssone",
+    "specialRequest": "eeeeeeeeeeeeee"
   }
+}
