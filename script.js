@@ -38,9 +38,9 @@ function generateProductList() {
     let newDiv = document.createElement('div');
     newDiv.classList.add('item');
     newDiv.innerHTML = `
-      <img src="image/${value.image}">
+      <img src="${value.image}" class="card-img">
       <div class="title">${value.name}</div>
-      <div class="price">${value.price.toLocaleString()}</div>
+      <div class="price">KSH ${value.price.toLocaleString()}</div>
       <button onclick="addToCard(${key})" class="shop-now" >Add To Card</button>
       `;
     list.appendChild(newDiv);
@@ -58,7 +58,6 @@ function addToCard(key) {
   }
   reloadCard();
 }
-
 function reloadCard() {
   listCard.innerHTML = '';
   let count = 0;
@@ -71,9 +70,9 @@ function reloadCard() {
     if (value != null) {
       let newDiv = document.createElement('li');
       newDiv.innerHTML = `
-        <div><img src="image/${value.image}"/></div>
+        <div><img src="${value.image}" alt="not"/></div>
         <div>${value.name}</div>
-        <div>${value.price.toLocaleString()}</div>
+        <div>KSH ${value.price.toLocaleString()}</div>
         <div>
           <button onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
           <div class="count">${value.quantity}</div>
@@ -83,7 +82,7 @@ function reloadCard() {
     }
   });
 
-  total.innerText = totalPrice.toLocaleString();
+  total.innerText = ` KSH ${totalPrice.toLocaleString()}`
   quantity.innerText = count;
 }
 
@@ -168,6 +167,10 @@ function saveAddress() {
 }
 
 document.getElementById('submitButton').addEventListener('click', fetchData);
-document.querySelector('#save').addEventListener('click', saveAddress);
+document.querySelector('#save').addEventListener('click', function(){
+  saveAddress()
+  window.alert("Address Saved");
+
+} );
 
 initApp();

@@ -11,7 +11,9 @@ crossorigin="anonymous">
 <link rel="stylesheet" href="./styles/main.css">
 <link rel="stylesheet" href="./styles/animation.css">
 
+
 <body>
+  
 
 
 
@@ -20,7 +22,14 @@ crossorigin="anonymous">
 
  <div class="slideshow-container">
   <nav>
-    <h3 id="logo">Stasho</h3>
+    <h3 id="logo">
+      <p class="stasho-main" id="1:16">
+        <span class="stasho-0">S</span>
+        <span class="stasho-1">TA</span>
+        <span class="stasho-2">S</span>
+        <span class="stasho-3">HO</span>
+        </p>
+    </h3>
     <ul>
       <li>HOME</li>
       <li>ABOUT</li>
@@ -28,12 +37,16 @@ crossorigin="anonymous">
       <li>CONTANTS</li>
     </ul>
     <div class="icons">
-      <h5>icon1</h5>
-      <h5>icon1</h5>
+      <h5> 
+        <img src="./icons8-menu-50.png" alt="" id="menu">
+      </h5>
+      <h5>
+        <img src="./icons8-search-48.png" alt="">
+      </h5>
       <h5>
         <header>
           <div class="shopping">
-              <img src="image/shopping.svg">
+              <img src="./icons8-cart-80.png">
               <span class="quantity">0</span>
           </div>
       </header>
@@ -214,8 +227,8 @@ crossorigin="anonymous">
         </ul>
         <form>
           <h6 style=" font-weight: bold;">Get in Touch</h6>
-          <input type="text">
-          <textarea name="" id="" cols="20" rows="4"></textarea>
+          <input type="text"  placeholder="Enter Your Email">
+          <textarea name="" id="" cols="20" rows="4" placeholder="Enter your message"></textarea>
           <button class="shop-now" id="send">Send</button>
 
         </form>
