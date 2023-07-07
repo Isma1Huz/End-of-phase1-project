@@ -75,8 +75,8 @@ ________________________________________________________________________________
 - The PayPal payment system using the Paypal API
 
 #### Database live link
-https://new-2q19.onrender.com/products
-https://new-2q19.onrender.com/address
+- https://new-2q19.onrender.com/products
+- https://new-2q19.onrender.com/address
 _______________________________________________________________________________________________________________________________________________________
 ### Host platform 
 - Github
