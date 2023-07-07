@@ -160,6 +160,10 @@ function saveAddress() {
     })
     .then(function (data) {
       console.log('Address updated:', data);
+      // Clear the form after successful update
+      document.querySelector('input[placeholder="City"]').value = '';
+      document.querySelector('input[placeholder="Street Address"]').value = '';
+      document.querySelector('input[placeholder="Special Request"]').value = '';
     })
     .catch(function (error) {
       console.log('Error updating address:', error);
@@ -168,9 +172,7 @@ function saveAddress() {
 
 document.getElementById('submitButton').addEventListener('click', fetchData);
 document.querySelector('#save').addEventListener('click', function(){
-  saveAddress()
+  saveAddress();
   window.alert("Address Saved");
-
-} );
-
+});
 initApp();
