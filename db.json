@@ -3,37 +3,37 @@
     {
       "id": 1,
       "name": "Paper File",
-      "image": "/images/files-removebg-preview.png",
+      "image": "https://live.staticflickr.com/65535/53030101001_498807ab5c_m.jpg",
       "price": 45
     },
     {
       "id": 2,
       "name": "Hard-cover-200-pages",
-      "image": "/images/hard-cover-removebg-preview.png",
+      "image": "https://live.staticflickr.com/65535/53030493475_d230206057_m.jpg",
       "price": 225
     },
     {
       "id": 3,
       "name": "A4 Folder",
-      "image": "/images/folder-removebg-preview.png",
+      "image": "https://live.staticflickr.com/65535/53030493485_f39ce0d179_m.jpg",
       "price": 75
     },
     {
       "id": 4,
       "name": "A4 Envelope",
-      "image": "/images/a4-removebg-preview.png",
+      "image": "https://live.staticflickr.com/65535/53030493605_2aa66ab1ec_m.jpg",
       "price": 25
     },
     {
       "id": 5,
       "name": "HB Pencil",
-      "image": "/images/hb-removebg-preview.png",
+      "image": "https://live.staticflickr.com/65535/53029517157_7b016139c9_m.jpg",
       "price": 20
     },
     {
       "id": 6,
       "name": "Scientific Calculator",
-      "image": "/images/calulator-removebg-preview.png",
+      "image": "https://live.staticflickr.com/65535/53030585453_986d309d06_m.jpg",
       "price": 1950
     }
   ],
