@@ -57,6 +57,12 @@ ________________________________________________________________________________
 - click the cart icon and click checkout
 - input the delivery address which will store the data to the server
 - choose payment method and enter account details then click pay
+____________________________________________________________________________________________________________________________________________________
+
+### Database
+- https://new-2q19.onrender.com/products
+- https://new-2q19.onrender.com/address
+  
 _____________________________________________________________________________________________________________________________________________________
 
 ## IMPLEMENTATION OF THE PROJECT
