@@ -22,7 +22,7 @@ let products = [];
 let selectedItems = [];
 
 function initApp() {
-  fetch('http://localhost:3000/products') 
+  fetch('https://data-270y.onrender.com/products') 
     .then(response => response.json())
     .then(data => {
       products = data;
@@ -148,7 +148,7 @@ function saveAddress() {
     specialRequest: specialRequest
   };
 
-  fetch('http://localhost:3000/address', {
+  fetch('https://data-270y.onrender.com/address', {
     method: 'PATCH',
     headers: {
       'Content-Type': 'application/json'
