@@ -1,6 +1,14 @@
+// Carousel timeout
+
 $('.carousel').carousel({
   interval: 3000
 });
+
+
+
+
+
+// Add to cart functionality
 
 let openShopping = document.querySelector('.shopping');
 let closeShopping = document.querySelector('.closeShopping');
@@ -20,6 +28,9 @@ closeShopping.addEventListener('click', () => {
 
 let products = [];
 let selectedItems = [];
+
+
+// Get the data for the products
 
 function initApp() {
   fetch('https://data-270y.onrender.com/products') 
@@ -48,6 +59,10 @@ function generateProductList() {
 }
 
 let listCards = [];
+
+
+
+// Render the data
 
 function addToCard(key) {
   if (listCards[key] == null) {
@@ -86,6 +101,12 @@ function reloadCard() {
   quantity.innerText = count;
 }
 
+
+
+
+
+// Change the quantity and the total price
+
 function changeQuantity(key, quantity) {
   if (quantity == 0) {
     delete listCards[key];
@@ -99,10 +120,25 @@ function changeQuantity(key, quantity) {
   reloadCard();
 }
 
+
+
+
+// Total price in the shopping cart
 function calculateTotal() {
   var total = selectedItems.reduce((sum, price) => sum + price, 0);
   return total;
 }
+
+
+
+
+
+
+
+
+
+// Mpesa Intergration in the Modal
+
 
 function fetchData() {
   var total = calculateTotal();
@@ -116,6 +152,14 @@ function fetchData() {
     'Apikey': 'Me3s8tLM8vW' // Replace with your API key
   };
   var info = new URLSearchParams(data).toString();
+
+
+
+
+
+
+
+  // Notify if transaction was initiated succedfull
 
   fetch(url, {
       method: 'POST',
@@ -137,6 +181,13 @@ function fetchData() {
     });
 }
 
+
+
+
+
+
+
+// Get the user's delivery address and store it in the database
 function saveAddress() {
   var city = document.querySelector('input[placeholder="City"]').value;
   var streetAddress = document.querySelector('input[placeholder="Street Address"]').value;
@@ -147,6 +198,12 @@ function saveAddress() {
     streetAddress: streetAddress,
     specialRequest: specialRequest
   };
+
+
+
+
+  // Storing the users address
+
 
   fetch('https://data-270y.onrender.com/address', {
     method: 'PATCH',
@@ -170,9 +227,18 @@ function saveAddress() {
     });
 }
 
+
+
+
+
+// Listening to the event from the user
+
+
 document.getElementById('submitButton').addEventListener('click', fetchData);
 document.querySelector('#save').addEventListener('click', function(){
   saveAddress();
   window.alert("Address Saved");
 });
-initApp();
+
+document.addEventListener('DOMContentLoaded',initApp)
+

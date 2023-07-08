@@ -1,4 +1,6 @@
 
+
+/* carousel and navigation styles  */
 body {
   overflow-x: hidden;
   background-color: wheat;
@@ -46,8 +48,6 @@ nav ul li{
 }
 
 
-
-
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -80,28 +80,6 @@ nav ul li{
   font-size: 12px;
   border-radius: 50%;
 }
-
-.add-to-cart-btn {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -151,10 +129,24 @@ nav ul li{
 .shop-1, .shop-2, .shop-3{
   z-index: 1;
 }
+.add-to-cart-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
 
 
 
+
+/* Products */
 
 /* Items  */
 .item-container, .item-container-2{
@@ -189,6 +181,7 @@ nav ul li{
 
 
 /* Newsletter */
+
 .newsletter {
   padding: 1rem;
   max-width: 100%;
@@ -248,6 +241,7 @@ nav ul li{
 
 
 /* Brands  */
+
 .brands {
   display: flex;
   justify-content: space-evenly;
