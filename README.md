@@ -50,12 +50,13 @@ For your project pitch, you should include:
 _________________________________________________________________________________________________________________________________________________
 
 ### Project Setup
-- Once you have the plan in place for the application you want to build take the following steps:
-- Create a new project folder.
-- Create a new GitHub repository (NB: ENSURE IT IS PUBLIC)
-- Add your TM as a contributor to the project. (This is only for grading purposes. We promise we won't steal your code)
-- Please make sure you regularly commit to the repository.
-  
+- clone the repo
+- start the json server
+- click "Go live " to start the web server 
+- Add an item to cart
+- click the cart icon and click checkout
+- input the delivery address which will store the data to the server
+- choose payment method and enter account details then click pay
 _____________________________________________________________________________________________________________________________________________________
 
 ## IMPLEMENTATION OF THE PROJECT
@@ -73,6 +74,10 @@ ________________________________________________________________________________
 - The 'add to cart functionality
 - The Mpesa payment system using the Mpesa Express API
 - The PayPal payment system using the Paypal API
+
+#### Database live link
+- https://new-2q19.onrender.com/products
+- https://new-2q19.onrender.com/address
 _______________________________________________________________________________________________________________________________________________________
 ### Host platform 
 - Github
